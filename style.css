@@ -1,0 +1,67 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(45deg, #f00b51, #7366ff);
+  min-height: 100vh;
+}
+
+header {
+  margin-bottom: 2em;
+}
+
+header p {
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  opacity: 0.8;
+}
+
+.title {
+  padding-top: 1em;
+  font-size: 3rem;
+  text-align: center;
+  color: white;
+  margin-bottom: 0.34em;
+}
+
+button {
+  display: block;
+  margin: 8em auto;
+  padding: 5em;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(to right, #fbd52d, #ef3a7b);
+}
+
+.idea {
+  font-size: 2.5rem;
+  color: white;
+  text-align: center;
+  padding: 0 1em;
+}
+
+@keyframes slide {
+  0% {
+    margin-left: -80em;
+  }
+  20% {
+    margin-left: -80em;
+  }
+  35% {
+    margin-left: -50em;
+  }
+  100% {
+    margin-left: 0;
+  }
+}
+
+.test {
+  animation: slide 600ms ease-in-out;
+}
